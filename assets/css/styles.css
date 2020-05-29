@@ -20,10 +20,28 @@ body {
 
 li {
     background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
 }
 
 li:nth-child(2n) {
     background-color: #f7f7f7;
+}
+
+input {
+    font-size: 18px;
+    color:  #2980b9;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    background: white;
+    border: 3px solid  #2980b9;
+    outline: none;
 }
 
 #container {
