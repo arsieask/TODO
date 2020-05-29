@@ -7,6 +7,15 @@ h1 {
     font-size: 24px;
     font-weight: normal;
 }
+.fa-plus {
+    float: right;
+}
+
+body {
+    background: #5433FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
 ul {
     list-style: none;
@@ -25,6 +34,23 @@ li {
     color: #666;
 }
 
+span {
+    background-color: red;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
 li:nth-child(2n) {
     background-color: #f7f7f7;
 }
@@ -36,6 +62,7 @@ input {
     width: 100%;
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus{
